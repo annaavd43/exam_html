@@ -1,0 +1,254 @@
+@media (max-width: 1416px) {
+    .albums li {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .tracks__info {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1152px) {
+    .nav_toggle {
+        display: inline-block;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    #nav_toggle:checked ~ ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #0e1214;
+        opacity: .9;
+
+        padding: 5%;
+        min-width: 250px;
+        height: 100%;
+        position: fixed;
+    }
+
+    .nav li {
+        margin-bottom: 20px;
+    }
+
+    .sponsors ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sponsors li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    
+    .container_playlist {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .playlist__info {
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .playlists__tracks {
+        justify-content: center;
+    }
+
+    .radiohead_container {
+        text-align: center;
+    }
+
+    .radiohead_container ul {
+        flex-direction: column;
+    }
+
+    .radiohead_container li:nth-child(2n) {
+        margin-left: 0px;
+    }
+
+    .radiohead_container li {
+        width: 100%;
+    }
+
+    .li_title {
+        justify-content: center;
+    }
+
+    .footer__info {
+        flex-direction: column-reverse;
+    }
+
+    .footer__links {
+        justify-content: space-between;
+    }
+
+    .footer__links,
+    .footer__logo {
+        width: 100%;
+    }
+
+    .footer__logo {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .button_classic,
+    .button_new {
+        font-size: 16px;
+        padding: 15px 25px;
+    }
+
+    .button_classic {
+        margin-right: 15px;
+    }
+
+    .nav li {
+        margin-right: 30px;
+    }
+
+    .container_promo h2 {
+        width: 50%;
+    }
+
+    .promo__buttons {
+        margin-top: 30px;
+    }
+
+    .button_apple {
+        margin-right: 15px;
+    }
+
+    .container_tracks {
+        flex-direction: column;
+    }
+
+    .albums {
+        width: 100%;
+    }
+
+    .albums ul {
+        justify-content: center;
+    }
+
+    .tracks__info {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+        .tracks__info_more {
+            justify-content: center;
+        }
+}
+
+@media (max-width: 768px) {
+    .promo__buttons {
+        flex-direction: column;
+        width: 35%;
+    }
+
+    .button_apple {
+        margin: 15px 0;
+    }
+
+    .footer__links {
+        flex-direction: column;
+    }
+
+    .footer__links ul {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer__links li {
+        font-size: 16px;
+    }
+
+    .footer__logo {
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container_header {
+        flex-direction: column;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav ul {
+        min-width: 150px;
+    }
+
+    .button_classic {
+        margin: 15px 0;
+    }
+
+    .nav_toggle {
+        margin-right: 0;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .container_promo h2{
+        width: 90%;
+    }
+
+    .playlists__tracks {
+        flex-direction: column;
+    }
+
+    .playlists__tracks img:nth-child(2) {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .promo__buttons {
+        width: 60%;
+    }
+
+    .container_footer {
+        overflow: hidden;
+    }
+
+    .footer__logo p,
+    .footer__links li {
+        font-size: 20px;
+    }
+
+    .footer__links h3 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    .promo__buttons {
+        width: 70%;
+    }
+}
+
+@media (max-width: 320px) {
+    .promo__buttons {
+        width: 80%;
+    }
+}
+
+

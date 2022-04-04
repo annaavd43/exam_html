@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.header {
+    background-color: #293942;
+}
+
+.container {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container_header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.5px;
+}
+
+#nav_toggle {
+    display: none;
+}
+
+.nav_toggle {
+    position: relative;
+    display: none;
+    border: 0;
+    background: none;
+    margin-right: 20px;
+}
+
+.nav_toggle::before {
+    content: 'Menu';
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.nav_toggle label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    margin-right: 40px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.button_classic,
+.button_new {
+    padding: 15px 45px;
+    font-size: 18px;
+    border: 1px solid #7971E9;
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.button_classic {
+    background-color: #7971E9;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.button_new {
+    color: #7971E9;
+    background-color: #293942;
+}
+
+.promo {
+    background-color: #293942;
+    background-image: url(../img/fon_prewew.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container_promo {
+    padding: 150px 0;
+}
+
+.container_promo h2{
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.promo__buttons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.promo__buttons button {
+    display: flex;
+    background-color: black;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.promo__buttons button img {
+    width: 30px;
+    height: 35px;
+}
+
+.promo__buttons h4 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.button_info {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.button_apple {
+    margin-right: 20px;
+}
+
+.sponsors {
+    background-color: #293942;
+}
+
+.container_sponsors {
+    width: 100%;
+    padding: 60px 0;
+}
+
+.sponsors ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.container_tracks {
+    display: flex;
+}
+
+.tracks {
+    background-color: #1B262C;
+    padding: 50px 0;
+}
+
+.tracks__info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.tracks__info p {
+    color: rgba(255,255,255,0.5);
+}
+
+.tracks__info p,
+.playlist__info p {
+    margin: 20px 0;
+}
+
+.albums {
+    width: 60%;
+}
+
+.albums ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 100%;
+}
+
+.albums li img {
+    width: 220px;
+    height: 220px;
+    border-radius: 5px;
+}
+
+.albums li img:hover {
+    border: 1px solid #7971E9;
+}
+
+.albums li:nth-child(1),
+.albums li:nth-child(2),
+.albums li:nth-child(4),
+.albums li:nth-child(5) {
+    margin-right: 10px;
+}
+
+.tracks__info_more {
+    display: flex;
+    align-items: center;
+}
+
+.container_playlist {
+    display: flex;
+}
+
+.tracks__info_more a,
+.playlist__info_more a {
+    text-decoration: none;
+    color: #7971E9;
+    font-weight: bold;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.playlists {
+    background-color: #1B262C;
+    padding: 80px 0;
+    box-shadow: 0 10px 15px #161f24 inset;
+}
+
+.playlist__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.playlist__info p {
+    color: rgba(255,255,255,0.5);
+}
+
+.playlists__tracks {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+}
+
+.playlists__tracks img {
+    border-radius: 15px;
+    box-shadow: 0 7px 15px 5px #141c20;
+    max-width: 240px;
+    max-height: 400px;
+}
+
+.playlists__tracks img:nth-child(2) {
+    margin-left: 50px;
+}
+
+.radiohead {
+    background-color: #1B262C;
+    box-shadow: 0 10px 15px #161f24 inset;
+    padding: 40px 0;
+}
+
+.radiohead_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.radiohead_container ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.radiohead_container li {
+    list-style: none;
+    width: 40%;
+    margin-top: 50px;
+}
+
+.radiohead_container li:nth-child(2n) {
+    margin-left: 70px;
+}
+
+.radiohead_container li p {
+    color: rgba(255,255,255,0.5);
+}
+
+.li_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.li_title p {
+    font-size: 16px;
+}
+
+.slash {
+    width: 3px;
+    height: 25px;
+    background-color: #7971E9;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #293942;
+    padding: 30px 0 80px 0;
+}
+
+.container_footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo {
+    width: 30%;
+    margin-right: 90px;
+}
+
+.footer__logo p {
+    font-size: 14px;
+    margin-top: 15px;
+    color: rgba(255,255,255,0.5);
+}
+
+.footer__info {
+    display: flex;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.footer__links h3 {
+    color: rgba(255,255,255,0.5);
+}
+
+.footer__links ul {
+    text-align: start;
+}
+
+.footer__links li {
+    list-style: none;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+
+.footer__socials {
+    background-color: #1B262C;
+    padding: 20px 0;
+}
+
+.footer__socials_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__socials_container a:nth-child(2) {
+    margin: 0 50px;
+    text-align: center;
+}
+
